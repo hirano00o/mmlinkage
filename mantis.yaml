@@ -1,0 +1,26 @@
+- projects:
+  - project: "Mantisのプロジェクト名(中間一致)"
+    status:
+      10: "ステータス(10～90)"
+      30: "確認中"
+      80: "削除"
+  - project: "業務"
+    status:
+      30: "確認中"
+      80: "削除"
+      90: "完了"
+- mantis:
+    first_url: http://<MantisURL URLの後ろにview.php?id=xxxxが自動付与>
+    second_url: http://<(必要であれば)サブMantisURL URLの後ろにview.php?id=xxxxが自動付与>
+- mattermost:
+    username: mantis
+    url: http://<MattermostURL>/hooks/xxxxxxxxxxxxxxxx
+- users:
+    mapping_user_mantis: [
+      "Mantis上のユーザ名",
+      "テスト次郎",
+    ]
+    mapping_user_mattermost: [
+      "Mattermost上のユーザ名",
+      "test_jiro",
+    ]
